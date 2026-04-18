@@ -21,3 +21,6 @@
 - `src/cli.py` — запуск и команды
 - `colab/` — ноутбуки lesson_XX / hw_XX
 - `data/` — локальные данные (в проде лучше БД/volume)
+
+## команды
+venv/Scripts/activate
