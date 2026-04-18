@@ -6,10 +6,9 @@
    ```bash
    python -m venv venv
    # Windows: venv\Scripts\activate
-   # macOS/Linux: source venv/bin/activate
    pip install -r requirements.txt
    ```
-
+   git checkout -b feature/m1-project-structure
 3) Запуск CLI:
    ```bash
    python -m src.cli
@@ -22,3 +21,6 @@
 - `src/cli.py` — запуск и команды
 - `colab/` — ноутбуки lesson_XX / hw_XX
 - `data/` — локальные данные (в проде лучше БД/volume)
+
+## команды
+venv/Scripts/activate
