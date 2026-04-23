@@ -24,3 +24,32 @@
 
 ## команды
 venv/Scripts/activate
+git switch main
+
+git switch feature/lesson-15-data-utils
+python -m src.main
+
+## если что-то уже поменял в ветке
+git add .
+git commit -m "save progress"
+git checkout main
+git pull origin main
+git checkout -b feature/new-lesson
+
+git add .
+git commit -m "save current progress"
+git checkout main
+
+## если надо удалить ветки и создать заново
+## удаление ветки не изменяет main
+git branch
+git checkout main
+git pull origin main
+git branch -D feature/lesson-14-strings
+git branch -D feature/lesson-15-data-utils
+git branch -D feature/lesson-16-file-utils
+git push origin --delete feature/lesson-14-strings
+git push origin --delete feature/lesson-15-data-utils
+git push origin --delete feature/lesson-16-file-utils
+git checkout -b feature/new-lesson
+git push -u origin feature/new-lesson
