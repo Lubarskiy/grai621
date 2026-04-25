@@ -54,10 +54,16 @@ git push origin --delete feature/lesson-16-file-utils
 git checkout -b feature/new-lesson
 git push -u origin feature/new-lesson
 
+## перейти в ветку, если она узе существует
+git switch feature/lesson-17-csv-utils
+
 ## в начале урока
 ```bash
-# 1. Посмотреть, в какой ветке вы сейчас
+# 1. Посмотреть ветку, состояние main, синхронизация с main, создать новую папку
 git branch
+git checkout main
+git pull origin main
+git checkout -b feature/lesson-17-csv-util
 
 # 2. Переименовать текущую ветку
 # Было: feature/lesson-16-data-utils
